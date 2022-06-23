@@ -1,17 +1,17 @@
 {
-  "name": "@sli/dropdown-react",
+  "name": "@sli/ts-dropdown-react",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [ "dist", "README.md" ],
-  "keywords": ["dropdown", "react", "openclassrooms"],
+  "keywords": ["dropdown", "react", "typescript", "openclassrooms"],
   "author": "Stéphane Lieumont",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/monatheoctocat/my_package/issues"
+    "url": "https://github.com/StephaneLi/lib_typescript-dropdown-react/issues"
   },
   "repository": {
     "type": "git",
-     "url": "URL_OF_YOUR_REPOSITORY"
+     "url": "https://github.com/StephaneLi/lib_typescript-dropdown-react"
   },
   "version": "1.0.0",
   "dependencies": {
