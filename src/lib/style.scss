@@ -34,7 +34,7 @@
     width: 100%;
     cursor: inherit;
     
-    label, input {
+    label, input {      
       padding: 5px 10px;
       height: 30px;
       cursor: inherit;
@@ -47,6 +47,7 @@
       top:0;
       left: 0;
       line-height: 30px;
+      font-size: 1.2rem;
       opacity: 0.5;  
       transform-origin: center left;
       transition: transform .15s ease-in-out;
@@ -104,6 +105,7 @@
   
     &--active {
       label {
+        font-size: 16px!important;
         opacity: 1;
         transform: translate(-5px, -30px) scale(0.85);
       }     
@@ -136,6 +138,7 @@
 
     li {
       list-style: none;
+      text-align: left!important;
       position: relative;
       padding: 2px 10px;
       font-size: 0.9rem;

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Dropdown from 'lib';
+import Dropdown from '.';
 
 
 describe('Component: Dropdown', () => {
@@ -45,7 +45,7 @@ describe('Component: Dropdown', () => {
   
   test('click on dropdown should deployed options', () => {
     render(
-      <Dropdown 
+      <Dropdown
         label='test'
         name='test'
         choicies={[]}
