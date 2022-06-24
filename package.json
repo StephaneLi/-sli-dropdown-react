@@ -21,13 +21,13 @@
     "type": "git",
     "url": "git+https://github.com/StephaneLi/lib_typescript-dropdown-react.git"
   },
-  "version": "1.0.19",
+  "version": "1.1.1",
   "scripts": {
     "start": "react-scripts start",
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c",
     "test": "react-scripts test",
-    "test-coverage": "npm test -- --coverage",
+    "test-coverage": "react-scripts test a --coverage --collectCoverageFrom='./src/lib/*'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
