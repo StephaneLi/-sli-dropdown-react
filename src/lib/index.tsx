@@ -20,11 +20,11 @@ type DropDownProps = {
 }
 
 const Dropdown: FunctionComponent<DropDownProps> = ({
-  label = '',
-  name = '',
+  label,
+  name,
   errorMessage = "Erreur message",
   error = false,
-  choicies = [],
+  choicies,
   value = '',
   borderColor = '#DADCE0',
   textColor = '#70757A',
@@ -56,6 +56,7 @@ const Dropdown: FunctionComponent<DropDownProps> = ({
 
   return (
     <div 
+      data-testid="container"
       className={`dropdown${ showOptions ? ' dropdown--show' : '' }`} 
       style={{
         zIndex: zIndex,
@@ -66,10 +67,11 @@ const Dropdown: FunctionComponent<DropDownProps> = ({
         '--border-radius': borderRadius,
       } as CSSProperties}
     >
-      <div onClick={displayOptions} className={`dropdown__input${ inputValue !== '' ? ' dropdown__input--active' : '' }${ error ?  ' dropdown__input--error' : ''}`}>
+      <div data-testid="dropdown" onClick={displayOptions} className={`dropdown__input${ inputValue !== '' ? ' dropdown__input--active' : '' }${ error ?  ' dropdown__input--error' : ''}`}>
         <label htmlFor={name}>{label}</label>
         <div className="dropdown__input__content">
           <input 
+            data-testid="input"
             ref={inputElement}
             name={name} 
             readOnly={true}
