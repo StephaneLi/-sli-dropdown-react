@@ -43,11 +43,17 @@ const Dropdown: FunctionComponent<DropDownProps> = ({
     setInputValue(value)
   }, [value])
 
+  /**
+   * Expand choicies
+   */
   const displayOptions = () => {
     inputElement.current?.focus()
     setShowOptions(!showOptions)
   }
 
+  /**
+   * Select choice
+   */
   const onClickOption = (e: MouseEvent<HTMLElement>) => {
     setInputValue(e.currentTarget.innerHTML)
     inputElement.current?.blur()
