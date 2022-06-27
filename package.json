@@ -1,6 +1,7 @@
 {
   "name": "@stephane1920/ts-dropdown-react",
   "main": "dist/index.js",
+  "homepage": "https://stephaneli.github.io/lib_typescript-dropdown-react/",
   "files": [
     "dist",
     "README.md"
@@ -28,7 +29,9 @@
     "build": "npm run clean && rollup -c",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test a --coverage --collectCoverageFrom='./src/lib/*'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -70,10 +73,10 @@
   "peerDependencies": {
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "react-scripts": "^5.0.1",
-    "ts-loader": "^9.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "ts-loader": "^9.3.1"
   },
   "description": "Installation: Run the following command: `npm install @stephane1920/ts-dropdown-react`"
 }

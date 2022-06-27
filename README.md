@@ -6,12 +6,14 @@
 A simple customizable react dropdown in typescript.  
 From project 14 OpenClassrooms, react app developer  
   
-[Projet 14 Openclassroms](https://github.com/StephaneLi/StephaneLieumont_14_03062022)
+[Projet 14 Openclassroms](https://github.com/StephaneLi/StephaneLieumont_14_03062022)  
+[Demo](https://stephaneli.github.io/lib_typescript-dropdown-react/)
 
 ## Installation
 ```npm install @stephane1920/ts-dropdown-react```  
 or  
 ```yarn add @stephane1920/ts-dropdown-react```
+
 
 ## Usage
 ```jsx
