@@ -77,6 +77,7 @@ const Dropdown: FunctionComponent<DropDownProps> = ({
         <label htmlFor={name}>{label}</label>
         <div className="dropdown__input__content">
           <input 
+            id={name}
             data-testid="input"
             ref={inputElement}
             name={name} 
